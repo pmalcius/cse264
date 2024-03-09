@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    width: 800px;
+    height: 300px;
+    background-color: #DCDCDC;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: x-large;
+    top: 20%;
+    left: 30%;
+}
+
+#table {
+    margin-right: 15px;
+}
+
+#table table {
+    table-layout: fixed;
+    width: 100%;
+    min-width: 350px;
+    max-width: 600px;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+#table tr, th {
+    border: 1px solid black;
+    padding: 20px 30px 20px 30px;
+}
+
+#table th {
+    transition: background-color 0.3s ease;
+}
+
+#table th:not(.blank):hover {
+    background-color: #C9EFFF;
+    cursor: pointer;
+}
+
+#buttons{
+    margin-right: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttons button{
+    cursor: pointer;
+    display: block;
+    margin-bottom: 40px;
+    width: 100px;
+}

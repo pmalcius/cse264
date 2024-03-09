@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Library App</title> 
+  <link rel="stylesheet" href="styles/styles.css"/>
+</head>
+<body>
+  <form>
+    <h1>Library App</h1>
+    <div id="display" style="float: left">
+      <table id="librarytable" style="border: 5px solid black">
+        <thead>
+          <tr>
+            <th style="width:10em">Title</th>
+            <th style="width:10em">Author</th>
+            <th style="width:5em">Genre</th>
+            <th style="width:10em">Publisher</th>
+            <th style="width:5em">Year of Pub.</th>
+            <th style="width:5em">Type</th>
+          </tr>
+        </thead>
+        <tbody id="libraryrows">
+        </tbody>
+      </table>
+    </div>
+    <div id="modifier" style="float: left">
+      <button type="button" id="add">Add</button>
+      <button type="button" id="list">List</button>
+      <br> Title: 
+      <input type="text" id="title" />
+      <br> Author:
+      <input type="text" id="author" />
+      <select id="authorDropdown">
+        <option value="">Select Author</option>
+      </select>
+      <br> Genre:
+      <select id="ttype">
+        <option value="Fiction">Fiction</option>
+        <option value="Non-Fiction">Non-Fiction</option>
+        <option value="Mystery">Mystery</option>
+        <option value="Science Fiction">Science Fiction</option>
+        <option value="History">History</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Biography">Biography</option>
+        <option value="Poetry">Poetry</option>
+        <option value="Other">Other</option>
+      </select>
+      <br> Publisher:
+      <input type="text" id="publisher" />
+      <select id="publisherDropdown">
+        <option value="">Select Publisher</option>
+      </select>
+      <br> Year:
+      <input type="text" id="year" />
+      <br> Type of book:
+      <input type="checkbox" id="hardcover" value="Hardcover"> Hardcover
+      <input type="checkbox" id="paperback" value="Paperback"> Paperback
+      <input type="checkbox" id="ebook" value="Ebook"> Ebook
+      <input type="checkbox" id="audio" value="Audio"> Audio
+      <br>
+    </div>
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js" crossorigin="anonymous"></script>  
+  <script src="scripts/script.js"></script>
+  <div id="container"></div>
+</body>
+</html>

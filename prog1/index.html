@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> <!-- This is for the Header font -->
+        <title>Jerry's Personal Website</title>
+        <style>
+            body {
+                width: 800px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            #container {
+                display: flex;
+                flex: 1;
+                flex-direction: row;
+                margin-top: 5px;
+            }
+
+            #container h2{
+                color: #FFA04A;
+            }
+
+            #container h3{
+                color: #FFBC4A;
+            }
+
+            #left {
+                width: 66%;
+                box-sizing: border-box;
+                padding: 20px;
+            }
+
+            #right {
+                width: 34%;
+                box-sizing: border-box;
+                padding: 20px;
+            }
+
+            header {
+                color: white;
+                background-color: #FFD249;
+                text-align: center;
+                width: 100%;
+                font-family: 'Pacifico', cursive;
+            }
+
+            header h1{
+                font-size: 40px;
+            }
+
+            .info{
+                margin-top: -15px;
+            }
+
+            footer {
+                text-align: center;
+                padding: 10px;
+                background-color: #FFD249;
+                color: white;
+                margin-top: auto;
+            }
+
+            .sub-section {
+                font-style: italic;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Jerry the Mouse</h1>
+        </header>
+        <div id="container">
+            <div id="left"> <!-- For the left column --> <!-- Needs to take up 2/3 of page -->
+                <h2>Bio</h2>
+                <h3 class="sub-section">Early Life</h3>
+                <p class="info">Jerry, the pint-sized powerhouse of mischief. Born in a mouse hole that doubled as a cozy hideout, 
+                    Jerry wasted no time in perfecting the art of cheese pilfering and evading the cat-mania that 
+                    surrounded him.</p>
+                <h3 class="sub-section">The Rival: Tom</h3>
+                <p class="info">The epic rivalry between Jerry and Tom is the stuff of legends. While Tom concocts elaborate 
+                    schemes involving anvils and mousetraps, Jerry effortlessly dances through the chaos with a smirk 
+                    that says, "Nice try, whiskers!"</p>
+                <h3 class="sub-section">Life at Lehigh</h3>
+                <p class="info">Jerry at Lehigh would turn lectures into comedy shows, transforming textbooks into maze blueprints 
+                    and doodling elaborate cat-avoidance strategies. His student ID would sport a mischievous grin, and 
+                    his dorm room antics would make him the legend of campus mischief. Forget straight A's; Jerry would 
+                    graduate with a degree in hilarity.</p>
+                <h2>Favorites</h2>
+                <ul class="favorites">
+                    <li>Cheese</li>
+                    <li>Beating Tom</li>
+                    <li>Milk</li>
+                    <li>Being Awesome</li>
+                </ul>
+                <h2>Courses</h2>
+                <ol class="courses">
+                    <li>Cat and Mouse Strategy 101</li>
+                    <li>Cheese Tasting and Pairing</li>
+                    <li>Physics of Whisker Evasion</li>
+                    <li>Mischief Management</li>
+                    <li>Cat Psychology 201</li>
+                </ol>
+                <h2>Music</h2>
+                <table border="1" style="margin-bottom: 10px;">
+                    <tr>
+                        <th style="color: #FFBC4A;">Songs</th>
+                        <th style="color: #FFBC4A;">Artists</th>
+                    </tr>
+                    <tr>
+                        <td>Happy</td>
+                        <td>Pharrel Williams</td>
+                    </tr>
+                    <tr>
+                        <td>Livin' on a Prayer</td>
+                        <td>Bon Jovi</td>
+                    </tr>
+                    <tr>
+                        <td>What a Wonderful World</td>
+                        <td>Louis Armstrong</td>
+                    </tr>
+                </table>
+            </div>
+            <aside id="right">
+                <img src="Images/jerry_the_mouse.webp" alt="Jerry the Mouse" style="max-width: 100%; height: auto;"> <!-- This image has Creative Common Licenses -->
+                <h2 style="text-align: center;">Fun Facts</h2>
+                <ol>
+                    <li>He is an Astronaut! He found out the moon is made from cheese!</li>
+                    <li>Winner of the Race Across the World.</li>
+                    <li>Jerry is a renowned chef, making mouse size dishes.</li>
+                    <li>The First time we saw Jerry was in 1940.</li>
+                    <li>He is also great at Fencing beating Tom in an epic duel.</li>
+                </ol>
+            </aside>
+        </div>
+        <footer>
+            <p>Copyright &copy; 2024 Paulius Malcius</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+/* Paulius Malcius - pam226 */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    border: 1px solid #ccc; /* Add a border around the entire calendar */
+    padding: 10px; /* Add padding for better visual appeal */
+}
+
+table {
+    border-collapse: collapse; /* Collapse borders between cells */
+    width: 100%; /* Make the table take up the entire width of its container */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Add a border around each cell */
+    padding: 8px; /* Add padding inside each cell for better spacing */
+    text-align: center; /* Center the text inside each cell */
+    background-color: #C1FF55;
+}
+
+.title {
+    font-size: 18px; /* Increase font size for the title */
+    background-color: #FFFB00;
+}
+
+.today {
+    background-color: #37FF00; /* Highlight today's cell with a background color */
+}
+
+.btn {
+    background-color: #FFFB00;
+}
+
+.days {
+    background-color: #37FF00;
+}
