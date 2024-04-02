@@ -1,0 +1,80 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal Library</title>
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Manrope:wght@200..800&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Top 40 Song List</h1>
+  </header>
+
+  <div class="container">
+    <form id="searchForm">
+      <div class="form-group">
+        <label for="artistDropdown">Artists:</label>
+        <select id="artistDropdown" class="form-control">
+          <option value="">(none)</option>
+          <!-- Artist options will be added here from db -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="keywordTextbox">Keyword:</label>
+        <input type="text" id="keywordTextbox" class="form-control">
+      </div>
+      <div class="form-group">
+        <!-- https://www.w3schools.com/bootstrap/bootstrap_buttons.asp -> Very cool button page for styling buttons -->
+        <button type="button" id="searchButton" class="btn btn-primary">Search</button>
+        <button type="button" id="prevButton" class="btn btn-secondary">&lt;&lt; Prev</button>
+        <button type="button" id="nextButton" class="btn btn-secondary">Next &gt;&gt;</button>
+      </div>
+      <div class="form-group">
+        <label for="resultsPerPage">Results per page:</label>
+        <select id="resultsPerPage" class="form-control">
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="25">25</option>
+          <option value="50">50</option>
+          <option value="100">100</option>
+        </select>
+      </div>
+    </form>
+
+    <table id="songsTable" class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Song Title</th>
+          <th>Artist</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Song rows will be added here -->
+      </tbody>
+    </table>
+    <p id="paginationInfo"></p>
+  </div>
+
+  <script src="js/vendor/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="js/vendor/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

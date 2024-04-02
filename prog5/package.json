@@ -1,0 +1,17 @@
+{
+  "name": "prog5",
+  "version": "1.0.0",
+  "description": "prog5 assignment",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paulius Malcius",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "better-sqlite3": "^9.4.3",
+    "express": "^4.19.2"
+  }
+}
