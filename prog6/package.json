@@ -1,0 +1,15 @@
+{
+  "name": "prog6",
+  "version": "1.0.0",
+  "description": "prog6",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Paulius Malcius",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
