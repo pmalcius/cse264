@@ -27,3 +27,13 @@
     - To start the program do
         1. npm install
         2. npm start run / node app.mjs
+
+- prog6
+    - This is a canvas web app that makes a DVD bouncing animation aross the screen when you click launch. It add one rectangle at a time changing the color and the words inside the rectangles.
+    - To start the program do
+        2. npm start run / node app.js
+
+- prog7 (Incomplete)
+    - This is a candy crush type of game that also incorperates a leaderboard...I think.
+    - To start the program do
+        2. npm start run / node app.js
