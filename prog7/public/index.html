@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Crazy Words</title>
+  <title>Fruit Smash</title>
   <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="">
@@ -23,11 +23,49 @@
 </head>
 
 <body>
-
   <!-- Your contents -->
+  <div id="game-container">
+    <!-- Canvas to the left -->
+    <canvas id="fruitCanvas" width="500" height="400"></canvas>
 
+    <!-- Leaderboard in the middle -->
+    <div id="leaderboard">
+      <h3>Leader Board</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody id="leaderboardData">
+          <!-- Leaderboard data will be inserted here -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sidebar for Chat and Login to the right -->
+    <div id="sidebar">
+      <!-- Chat Section -->
+      <div id="chat">
+        <h3>Chat</h3>
+        <div id="chatMessages" class="scrollable">
+          <!-- Chat messages will be displayed here -->
+        </div>
+        <input type="text" id="chatMessage" placeholder="Type a message...">
+        <button id="chat-button">Send</button>
+      </div>
+
+      <!-- Login Section -->
+      <div id="login">
+        <input type="text" id="username" placeholder="Enter username">
+        <button id="login-button">Login</button>
+      </div>
+    </div>
+  </div>
   <script src="js/vendor/jquery.min.js" crossorigin="anonymous"></script>
   <script src="js/vendor/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="http://mercury.cse.lehigh.edu:3000/socket.io/socket.io.js"></script>
   <script src="js/script.js"></script>
 </body>
 

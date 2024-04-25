@@ -10,5 +10,3 @@ app.use(express.static(
 ));
 
 app.listen(3000, () => console.log("Starting Fruit Smash on port 3000"));
-
-
